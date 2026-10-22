@@ -2,7 +2,15 @@ import React from 'react'
 import { Valores } from '../models/valores'
 
 export default function ResultadoC(props:Valores) {
+
   return (
-    <div>Valor Inicial: {props.valorInicial} grados celcius, equivale a: {props.medidaF} grados Farenheit y {props.medidaK} grados Kelvin</div>
+    <div>
+      <ul>
+        <li>Valor Inicial: <strong>{props.medidaC}</strong> grados celcius</li>
+        <li>Conversiones:</li>
+        <li><strong>{props.medidaF}</strong> grados Farenheit</li>
+        <li><strong>{props.medidaK}</strong> grados Kelvin</li>
+      </ul>
+    </div>
   )
 }
